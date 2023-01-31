@@ -55,3 +55,5 @@ fi
 done
 
 TRY2=$($PSQL "INSERT INTO games(user_id, number_of_guesses) VALUES( (SELECT user_id from players WHERE username='$USERNAME'), $NUMBER_OF_GUESSES);")
+
+exit
